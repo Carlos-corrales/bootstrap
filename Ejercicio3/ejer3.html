@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Dashboard</title>
+         <!--Incluir librerias bootstrap-->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+<style>
+  
+</style>
+</head>
+<body>
+   <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#" style="font-family: 'Skygraze', sans-serif;">EUROPARTES S.A.</a>
+
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="#">Sign out</a>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3 sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+               <img src="img/dashboard.png" width="30px" alt="Icono 1"> Dashboard
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+               <img src="img/listado.png" width="30px" walt="Icono 2"> Listado de Partes
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+               <img src="img/proformas.png" width="30px" alt="Icono 3"> Proformas
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+               <img src="img/facturas.png" width="30px" alt="Icono 4"> Facturas
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+               <img src="img/modelos.png" width="30px" alt="Icono 5"> Modelos
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+               <img src="img/clientes.png" width="30px" alt="Icono 6"> Clientes
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+               <img src="img/proveedores.png" width="30px" alt="Icono 7"> Proveedores
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+               <img src="img/ingresos.png" width="30px" alt="Icono 8"> Ingresos
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">
+               <img src="img/inventarios.png" width="30px" alt="Icono 9"> Inventarios
+            </a>
+         </li>
+      </ul>
+      
+
+        
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar" class="align-text-bottom"></span>
+            This week
+          </button>
+        </div>
+      </div>
+
+
+
+      <h2>Listado de Piezas</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Pos.</th>
+              <th scope="col">No.pieza</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Ubicacion</th>
+              <th scope="col">Stock</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-danger"> 
+              <td>1</td>
+              <td>P12345</td>
+              <td>Pieza 1</td>
+              <td>Almacén A</td>
+              <td>0</td>
+              <td>$10.00</td>
+           </tr>
+           <tr class="table-success"> 
+              <td>2</td>
+              <td>P67890</td>
+              <td>Pieza 2</td>
+              <td>Almacén B</td>
+              <td>100</td>
+              <td>$15.00</td>
+           </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+
+
+</body>
+</html>
